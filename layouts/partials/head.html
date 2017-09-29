@@ -1,0 +1,26 @@
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  {{ .Hugo.Generator }}                                                                   
+  {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}             
+  {{ with .Site.Params.role }}<meta name="description" content="{{ . }}">{{ end }}  
+  
+  <title>{{ .Site.Title }}</title>
+	
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
+	<link rel="icon" type="image/png" href="{{ "img/favicon.png" | relURL }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+<link rel="stylesheet" href="http://rosskevin.github.io/bootstrap-material-design/dist/bootstrap-material-design.min.css">
+<!--	
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous">
+-->
+
+
+  {{ range .Site.Params.custom_css }}
+  <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">       
+  {{ end }}
+  <link rel="feed" href="{{ .RSSLink | default .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+</head>

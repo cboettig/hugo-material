@@ -1,0 +1,61 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Material Kit by Creative Tim"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+#enableGitInfo = true
+publishDir = "docs"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Landing"
+    url = "/landing"
+    pre = "<i class='fa fa-home'></i>"
+    weight = 1
+[[menu.main]]
+    name = "Profile"
+    url = "/profile"
+    pre = "<i class='fa fa-user'></i>"
+    weight = 2
+[[menu.main]]
+    name = "Signup"
+    url = "/signup"
+    weight = 3
+[[menu.main]]
+    identifier = "twitter"
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "https://twitter.com/CreativeTim"
+    weight = 4
+[[menu.main]]
+    identifier = "github"
+    pre = "<i class='fa fa-github'></i>"
+    url = "https://github.com/CreativeTim"
+    weight = 4
+
+
+[params]
+    background = "https://climate.nasa.gov/system/internal_resources/details/original/417_1263_banner-science-1600x500.jpg"
+#    custom_css = ["example.css"]
+#    custom_js = ["example.js"]
+    
+    date_format = "Mon, Jan 2, 2006"
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.10.0"
+    highlightCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+    
+

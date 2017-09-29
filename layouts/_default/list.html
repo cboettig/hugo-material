@@ -1,0 +1,17 @@
+{{ define "body" }}
+<body>
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay-md-down bmd-drawer-in-lg-up">
+    <header class="bmd-layout-header">
+      {{ partial "nav.html" . }}
+    </header>
+    {{ partial "drawer.html" . }}
+    <main class="bmd-layout-content">
+      <div class="container">
+        <!-- {{partial "example.html" . }} -->
+      </div>
+    </main>
+  </div>
+<!-- {{partial "whatisthis.html" }} -->
+{{ partial "footer" . }}
+</body>
+{{ end }}
