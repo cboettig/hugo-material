@@ -39,7 +39,7 @@ publishDir = "docs"
 
 [params]
     background = "https://climate.nasa.gov/system/internal_resources/details/original/417_1263_banner-science-1600x500.jpg"
-#    custom_css = ["example.css"]
+    custom_css = ["creative-tim.css"]
 #    custom_js = ["example.js"]
     
     date_format = "Mon, Jan 2, 2006"
