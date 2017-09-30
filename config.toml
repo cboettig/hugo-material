@@ -1,7 +1,7 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-title = "Material Kit by Creative Tim"
+title = "Material Design"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
@@ -11,34 +11,55 @@ publishDir = "docs"
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
-[[menu.main]]
-    name = "Landing"
-    url = "/landing"
+[[menu.drawer]]
+    name = "Home"
+    url = "/"
     pre = "<i class='fa fa-home'></i>"
     weight = 1
-[[menu.main]]
-    name = "Profile"
-    url = "/profile"
+[[menu.drawer]]
+    name = "Test"
+    url = "/test"
     pre = "<i class='fa fa-user'></i>"
     weight = 2
-[[menu.main]]
+[[menu.drawer]]
     name = "Signup"
     url = "/signup"
     weight = 3
-[[menu.main]]
+
+[[menu.top]]
     identifier = "twitter"
     pre = "<i class='fa fa-twitter'></i>"
     url = "https://twitter.com/CreativeTim"
     weight = 4
-[[menu.main]]
+[[menu.top]]
     identifier = "github"
     pre = "<i class='fa fa-github'></i>"
     url = "https://github.com/CreativeTim"
     weight = 4
 
+[[menu.footer]]
+  weight = 1
+  identifier = "Berkeley"
+  name = "UC Berkeley"
+  pre = "<i class=\"material-icons\">pin_drop</i>"
+  url = "https://data.berkeley.edu"
+[[menu.footer]]
+  weight = 2
+  identifier = "GitHub"
+  name = "Team Repos"
+  pre = "<i class=\"button-icon fa fa-2x fa-github\"></i>"
+  url = "https://github.com/espm-157"
+[[menu.footer]]
+  weight = 3
+  identifier = "Piazza"
+  name = "Forum"
+  pre = "<i class=\"material-icons\">forum</i>"
+  url = "https://piazza.com/berkeley/fall2017/espm157/home"
 
 [params]
-    background = "https://climate.nasa.gov/system/internal_resources/details/original/417_1263_banner-science-1600x500.jpg"
+    background = "/img/nasa_melting.jpg"
+#    background = "/img/noaa-ice-large-cc0.jpg"
+#    background = "https://climate.nasa.gov/system/internal_resources/details/original/417_1263_banner-science-1600x500.jpg"
     custom_css = ["creative-tim.css"]
 #    custom_js = ["example.js"]
     
