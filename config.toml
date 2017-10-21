@@ -82,7 +82,7 @@ publishDir = "docs"
     background = "/img/nasa_melting.jpg"
 #    background = "/img/noaa-ice-large-cc0.jpg"
 #    background = "https://climate.nasa.gov/system/internal_resources/details/original/417_1263_banner-science-1600x500.jpg"
-    custom_css = ["creative-tim.css"]
+    custom_css = ["example.css"]
 #    custom_js = ["example.js"]
     
     date_format = "Mon, Jan 2, 2006"
