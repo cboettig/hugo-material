@@ -4,12 +4,12 @@
         <span class="sr-only">Toggle drawer</span>
         <i class="material-icons" style="color:white">menu</i>
       </button>
-      <ul class="nav navbar-nav flex-row flex-md-row">
+      <ul class="nav navbar-nav navbar-right flex-row px-5">
       {{ range .Site.Menus.top }}
-          <li class="nav-item">
-          <a href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+          <li class="nav-item p-3">
+          <a href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }} 
+             title = "{{.Name }}">
             {{ .Pre }}
-            <span>{{ .Name }}</span>
           </a>
         </li>
       {{ end }}
