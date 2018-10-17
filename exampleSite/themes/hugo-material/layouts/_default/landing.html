@@ -1,0 +1,31 @@
+{{ define "body" }}
+<body class="landing-page sidebar-collapse"> <!-- other classes: index-page , landing-page -->
+  {{ partial "nav.html" . }}
+  
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('{{ .Site.Params.background | absURL }}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+            <h1>{{ .Title }}</h1>
+            <h3>{{ .Params.subtitle }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main main-raised">
+    <div class="section section-basic">
+      <div class="container">
+
+      {{ .Content }}
+      
+      </div>
+    </div>
+  </div>
+  
+  {{ partial "footer" . }}
+ 
+</body>
+{{ end }}

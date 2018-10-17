@@ -1,0 +1,23 @@
+{{ define "body" }}
+<body class="login-page sidebar-collapse"> 
+<!-- other classes: profile-page, index-page, landing-page, login-page -->
+  {{ partial "nav.html" . }}
+  
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('{{ .Site.Params.background | absURL }}');">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <div class="card card-login">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+      
+      
+  </div>
+  
+  {{ partial "footer" . }}
+ 
+</body>
+{{ end }}
