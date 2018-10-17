@@ -1,67 +1,26 @@
-  <header class="bmd-layout-header">
-    <nav class="navbar navbar-nav navbar-fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
-        <span class="sr-only">Toggle drawer</span>
-        <i class="material-icons" style="color:white">menu</i>
-      </button>
-      <ul class="nav navbar-nav navbar-right flex-row px-5">
-      {{ range .Site.Menus.top }}
-          <li class="nav-item p-3">
-          <a href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }} 
-             title = "{{.Name }}">
-            {{ .Pre }}
-          </a>
-        </li>
-      {{ end }}
-      </ul>
-    </nav>
-  </header>
-  
-<!--
-    	<div class="container">
-        	<div class="navbar-header">
-        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-            		<span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-        		</button>
-        		<a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}">{{ .Site.Title }}</a>
-        	</div>
-
-        	<div class="collapse navbar-collapse" id="navigation-example">
-        		<ul class="nav navbar-nav navbar-right">
-      {{ range .Site.Menus.top }}
-        {{ if .HasChildren }}
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            {{ .Name }}
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            {{ range .Children }}
-            <li class="nav-item">
-              <a href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-              </a>
-            </li>
-            {{end}}
-          </ul>
-        </li>
-
-        {{ else }}
-
-        <li class="nav-item">
-          <a href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
-            {{ .Pre }}
-            <span>{{ .Name }}</span>
-          </a>
-        </li>
-        {{ end }}
-      {{ end }}
-        		</ul>
-        	</div>
-    	</div>
-    </nav>
--->
+<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          Material Kit </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          {{ range .Site.Menus.top }}
+          <li class="nav-item">
+            <a class="nav-link"
+               href="{{ .URL | relURL }}"
+               {{ if $.IsHome }}data-target="{{ .URL }}"{{ end }} 
+               title = "{{ .Name }}">{{ .Pre }} {{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+</nav>

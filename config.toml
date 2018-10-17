@@ -11,20 +11,6 @@ publishDir = "docs"
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
-[[menu.drawer]]
-    name = "Home"
-    url = "/"
-    pre = "<i class='fa fa-home'></i>"
-    weight = 1
-[[menu.drawer]]
-    name = "Test"
-    url = "/test"
-    pre = "<i class='fa fa-user'></i>"
-    weight = 2
-[[menu.drawer]]
-    name = "Signup"
-    url = "/signup"
-    weight = 3
 
 [[menu.top]]
     identifier = "home"
@@ -33,30 +19,21 @@ publishDir = "docs"
     url = "/"
     weight = 1
 [[menu.top]]
-    identifier = "members"
-    name = "Members"
+    name = "Profile"
     pre = "<i class='material-icons'>people</i>"
-    url = "/members"
+    url = "/profile"
     weight = 2
 [[menu.top]]
-    identifier = "vita"
-    name = "Publications"
+    name = "Login"
     pre = "<i class='material-icons'>book</i>"
-    url = "/vita"
+    url = "/login"
     weight = 3
 [[menu.top]]
-    identifier = "teaching"
-    name = "Teaching"
+    name = "About"
     pre = "<i class='material-icons'>record_voice_over</i>"
-    url = "/teaching"
+    url = "/about"
     weight = 4
- [[menu.top]]
-    identifier = "lab-notebook"
-    name = "Lab Notebook"
-    pre = "<i class='fa fa-pencil-square-o'></i>"
-    url = "/lab-notebook"
-    weight = 5
-   
+
 
 [[menu.footer]]
   weight = 1
@@ -69,13 +46,13 @@ publishDir = "docs"
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"button-icon fa fa-2x fa-github\"></i>"
-  url = "https://github.com/"
+  url = "https://github.com/cboettig"
 [[menu.footer]]
   weight = 3
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"button-icon fa fa-2x fa-twitter\"></i>"
-  url = "https://twitter.com/"
+  url = "https://twitter.com/cboettig"
 
 
 [params]
