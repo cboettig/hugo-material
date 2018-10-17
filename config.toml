@@ -6,7 +6,7 @@ googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 #enableGitInfo = true
-publishDir = "docs"
+publishDir = "../hugo-material-gh-pages"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
