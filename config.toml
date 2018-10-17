@@ -12,23 +12,23 @@ publishDir = "docs"
     post = "/:year/:month/:day/:slug/"
 
 
-[[menu.top]]
+[[menu.main]]
     identifier = "home"
     pre = "<i class='material-icons'>home</i>"
     name = "Home"
     url = "/"
     weight = 1
-[[menu.top]]
+[[menu.main]]
     name = "Profile"
     pre = "<i class='material-icons'>people</i>"
     url = "/profile"
     weight = 2
-[[menu.top]]
+[[menu.main]]
     name = "Login"
     pre = "<i class='material-icons'>book</i>"
     url = "/login"
     weight = 3
-[[menu.top]]
+[[menu.main]]
     name = "About"
     pre = "<i class='material-icons'>record_voice_over</i>"
     url = "/about"

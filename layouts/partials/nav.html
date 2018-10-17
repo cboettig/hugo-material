@@ -2,7 +2,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Material Kit </a>
+          {{.Site.Title }} </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,7 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          {{ range .Site.Menus.top }}
+          {{ range .Site.Menus.main }}
           <li class="nav-item">
             <a class="nav-link"
                href="{{ .URL | relURL }}"
