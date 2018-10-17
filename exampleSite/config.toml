@@ -1,0 +1,81 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Material Design"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+#enableGitInfo = true
+publishDir = "../../hugo-material-gh-pages"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+
+[[menu.main]]
+    identifier = "home"
+    pre = "<i class='material-icons'>home</i>"
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Profile"
+    pre = "<i class='material-icons'>people</i>"
+    url = "/profile"
+    weight = 2
+[[menu.main]]
+    name = "Login"
+    pre = "<i class='material-icons'>book</i>"
+    url = "/login"
+    weight = 3
+[[menu.main]]
+    name = "About"
+    pre = "<i class='material-icons'>record_voice_over</i>"
+    url = "/about"
+    weight = 4
+
+
+[[menu.footer]]
+  weight = 1
+  identifier = "Berkeley"
+  name = "UC Berkeley"
+  pre = "<i class=\"material-icons\">pin_drop</i>"
+  url = "https://berkeley.edu"
+[[menu.footer]]
+  weight = 2
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"button-icon fa fa-2x fa-github\"></i>"
+  url = "https://github.com/cboettig"
+[[menu.footer]]
+  weight = 3
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"button-icon fa fa-2x fa-twitter\"></i>"
+  url = "https://twitter.com/cboettig"
+
+
+[params]
+    background = "/img/nasa_melting.jpg"
+#    background = "/img/noaa-ice-large-cc0.jpg"
+#    background = "https://climate.nasa.gov/system/internal_resources/details/original/417_1263_banner-science-1600x500.jpg"
+    custom_css = ["example.css"]
+#    custom_js = ["example.js"]
+    
+    date_format = "Mon, Jan 2, 2006"
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.10.0"
+    highlightCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+    
+
