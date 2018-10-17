@@ -1,23 +1,27 @@
 {{ define "body" }}
-<body class="profile-page">
-  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+<body class="profile-page sidebar-collapse"> <!-- other classes: index-page , landing-page -->
   {{ partial "nav.html" . }}
-  {{ partial "drawer.html" . }}
-  <main class="bmd-layout-content">
-    <div class="wrapper">
-      <div class="header header-filter" style="background-image: url('{{ .Site.Params.background | relURL }}');">
-      </div>
-		  <div class="main main-raised">
-			  <div class="container">
-  		  	<div class="section text-left">
-  		  	  <h2 class="title text-center">{{ .Title }}</h2>
-  	            {{ .Content }}
-  	      </div>
+  
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('{{ .Site.Params.background | absURL }}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+            <h1>{{ .Title }}</h1>
+            <h3>{{ .Params.subtitle }}</h3>
+          </div>
         </div>
-  		</div>
-      {{ partial "footer" . }}
-	  </div>
-  </main>
-  </div>  
+      </div>
+    </div>
+  </div>
+  
+  <div class="main main-raised">
+    <div class="section section-basic">
+      {{ .Content }}
+    </div>
+  </div>
+  
+  {{ partial "footer" . }}
+ 
 </body>
 {{ end }}
