@@ -15,13 +15,9 @@
           {{ range .Site.Menus.top }}
           <li class="nav-item">
             <a class="nav-link"
-               rel="tooltip" title="" 
-               data-placement="bottom" 
-               target="_blank" 
-               data-original-title="{{ .Name }}"
                href="{{ .URL | relURL }}"
                {{ if $.IsHome }}data-target="{{ .URL }}"{{ end }} 
-               title = "{{ .Name }}">{{ .Pre }}</a>
+               title = "{{ .Name }}">{{ .Pre }} {{ .Name }}</a>
           </li>
           {{ end }}
         </ul>
