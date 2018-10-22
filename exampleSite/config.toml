@@ -29,9 +29,9 @@ publishDir = "../../hugo-material-gh-pages"
     url = "/login"
     weight = 3
 [[menu.main]]
-    name = "About"
+    name = "Blog"
     pre = "<i class='material-icons'>record_voice_over</i>"
-    url = "/about"
+    url = "/post"
     weight = 4
 
 

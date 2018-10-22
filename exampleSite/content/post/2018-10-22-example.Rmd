@@ -1,0 +1,13 @@
+---
+title: Example
+author: ''
+date: '2018-10-22'
+slug: example
+categories: []
+tags: []
+---
+
+```{r}
+1 + 1
+```
+
