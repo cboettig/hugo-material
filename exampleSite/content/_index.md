@@ -3,7 +3,7 @@ background: https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=en
 
 title: "Write the best title for your page."
 subtitle: "Every landing page needs a small description after the big bold title."
-
+layout: landing
 ---
 
 ## Heading
