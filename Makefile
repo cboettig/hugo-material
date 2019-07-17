@@ -2,7 +2,8 @@
 example: 
 	cp -r layouts/ exampleSite/themes/hugo-material/layouts/
 	cp -r static/ exampleSite/themes/hugo-material/static/
-#	hugo -s exampleSite
+	cp -r assets/ exampleSite/themes/hugo-material/assets/
+	hugo -s exampleSite
 #	R -e "setwd('exampleSite'); blogdown::build_site()"
 
 serve:
