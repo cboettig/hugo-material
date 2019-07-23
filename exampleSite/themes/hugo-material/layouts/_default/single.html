@@ -1,23 +1,19 @@
-{{ define "body" }}
-<body class="profile-page sidebar-collapse"> <!-- other classes: index-page , landing-page -->
+{{ define "header" }}
 
-  {{ partial "nav.html" . }}
-  {{ partial "page-header.html" . }}
+{{ partial "page-header.html" . }}
 
-  
-  <div class="main main-raised">
-    <div class="section section-basic">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 ml-auto mr-auto">
-      {{ .Content }}
+{{ end }}
+
+{{ define "main" }}
+    <div class="main main-raised">
+      <div class="section section-basic">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-{{.Params.pagewidth | default "6"}} ml-auto mr-auto">
+            {{ .Content }}
+            </div>
           </div>
-        </div>   
+        </div>
       </div>
     </div>
-  </div>
-  
-  {{ partial "footer" . }}
- 
-</body>
 {{ end }}

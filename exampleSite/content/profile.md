@@ -1,5 +1,6 @@
 ---
 title: Profile
+class: "profile-page"
 ---
 
 # Lorem Ipsum

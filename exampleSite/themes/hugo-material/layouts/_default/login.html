@@ -1,9 +1,5 @@
-{{ define "body" }}
-<body class="login-page sidebar-collapse"> 
-  {{ partial "nav.html" . }}
-  
+{{ define "header" }}
   <div class="page-header header-filter clear-filter blue-filter" data-parallax="true" style="background-image: url('{{ .Site.Params.background | absURL }}');">
-    
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
@@ -13,10 +9,9 @@
         </div>
       </div>
     </div>
-      
   </div>
-  
-  {{ partial "footer" . }}
- 
-</body>
+{{ end }}
+
+{{ define "main" }}
+<br/>
 {{ end }}

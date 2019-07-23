@@ -7,8 +7,8 @@ example:
 #	R -e "setwd('exampleSite'); blogdown::build_site()"
 
 serve:
-	R -e "setwd('exampleSite'); blogdown::serve_site()"
-#	hugo-s exampleSite
+	hugo -s exampleSite server
+	#R -e "setwd('exampleSite'); blogdown::serve_site()"
 
 
   
