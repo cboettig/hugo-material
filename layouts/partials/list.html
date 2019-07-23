@@ -8,7 +8,6 @@
 {{end}}
 
 <!-- posts only! -->
-{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 
     <div class="row">
     {{ range first 3 .Paginator.Pages }}
